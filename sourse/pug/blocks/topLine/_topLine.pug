@@ -22,7 +22,7 @@ mixin topLine()
 				.col-auto
 					+b.avatar 
 						+e.img-wrap 
-							img(src="img/@2x/potc.jpg", alt="")
+							+pic("potc.jpg") 
 						+e.count 8
 						+e.medal 
 							img(src="img/@2x/medal-gold.png", alt="")
@@ -30,14 +30,16 @@ mixin topLine()
 				.col-auto
 					+b.avatar 
 						+e.img-wrap 
-							img(src="img/@2x/potc.jpg", alt="")
+							+pic("potc-2.jpg") 
+							//- img(src="img/@2x/potc-2.jpg", alt="")
 						+e.count 8
 						+e.medal 
 							img(src="img/@2x/medal-silver.png", alt="")
 				.col-auto
 					+b.avatar 
 						+e.img-wrap 
-							img(src="img/@2x/potc.jpg", alt="")
+							+pic("potc-3.jpg") 
+							//- img(src="img/@2x/potc-3.jpg", alt="")
 						+e.count 8
 						+e.medal 
 							img(src="img/@2x/medal-bronse.png", alt="")

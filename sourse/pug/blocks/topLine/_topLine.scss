@@ -12,6 +12,10 @@
 		padding-top: rem(40);
 		svg{
 			width: rem(320);
+			@include media-breakpoint-up(xxl) {
+				// --bs-gutter-x: 80px;
+				margin-right: rem(50);
+			}
 		}
 		&__text{
 			margin-left: auto;

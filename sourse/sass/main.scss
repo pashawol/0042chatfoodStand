@@ -26,7 +26,7 @@ $output-bourbon-deprecation-warnings: false;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: rem(1920 - 130)
+  max-width: (1920px - 130px);
 }
 @import "./node_modules/bootstrap/scss/functions";
 @import "vars"; 

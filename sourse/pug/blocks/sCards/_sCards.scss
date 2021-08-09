@@ -92,10 +92,11 @@
 	}
 }
 
+@include media-breakpoint-up(xl) {
 
-.col-xl-3{
-	.card{ 
-		padding-bottom: rem(40);
+	.col-xl-3{
+		.card{ 
+			padding-bottom: rem(40);
 			&__head {
 				// font-size: ;
 				@include rfs(30px);
@@ -104,5 +105,6 @@
 				@include rfs(80px);
 				padding-top: em(5);
 			}
+		}
 	}
 }
