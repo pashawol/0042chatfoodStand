@@ -1,0 +1,46 @@
+mixin sCards(data)
+	// start sCards
+	+b.sCards.section#sCards&attributes(attributes)
+		.container
+			.row
+				mixin card(i,t,c, cl)
+					.col-12(class = (cl || "col-xl-6"))
+						+b.card
+							+e.head= t
+							+e.body
+								+pic(`${i}.png`,'',0)
+								+e.tedt= c
+							+e.footer
+								if block 
+									block
+								else
+									.row
+										+e.footer-text.col-auto 
+											+e.up 
+											.strong 133
+											span за сегодня
+										+e.footer-text.col-auto 
+											+e.down
+											.strong 267
+											span за неделю
+										+e.footer-text.col-auto 
+											+e.up 
+											.strong 1544
+											span за месяц
+				+card(`a5b408c57952bd342135de1abec229b9`,`Пользователи`,`8790`)
+				+card(`c61b6f764e0f588941b7a634fffbf608`,`Сумма заказов`,`3 987 600 ₽`)
+				+card(`f7dea99394dc9bececb6c3f20ce4b836`,`Заказы`,`113`)
+					.row
+						+e.footer-text.col-auto 
+							+e.up 
+							.strong 987 600 ₽
+							span за неделю
+						+e.footer-text.col-auto 
+							+e.down
+							.strong 987 600 ₽
+							span за месяц
+				+card(`f45877169cf9a98c090d7aa14e728d4e`,`Рестораны`,`999`, 'col-xl-3  ')
+					+e.footer-text Когда здесь будет 100, мы&nbsp;побреемся на&nbsp;лысо
+				+card(`e6124e912e14a4498f8e27a82cc50524`,`Активность`,`897`, 'col-xl-3  ')
+					+e.footer-text Активные пользователи за&nbsp;сегодня
+	// end sCards
